@@ -1,0 +1,162 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+html, body{
+  /* margin:0; padding:0; box-sizing:border-box; clear:both; */
+  font-family: 'Space Mono', monospace;
+}
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyanPrimary: hsl(186, 14%, 43%);
+  --darkGrayishCyanSecondary: hsl(184, 14%, 56%);
+  --lightGrayishCyanPrimary: hsl(185, 41%, 84%);
+  --lightGrayishCyanSecondary: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+body{
+  background-color: var(--lightGrayishCyanPrimary);
+  height: 100vh;
+  color: var(--veryDarkCyan);
+}
+#imgRow{
+  width: 3rem;
+}
+#cardWrap{
+  width: 10rem;
+  height: 85%;
+  background-color: var(--white);
+  font-size: 0.5rem;
+}
+#customPart{
+  width: 80%;
+  height: 60%;
+}
+input{
+  text-align: right;
+  outline: none;
+  border-width: 2px;
+  background-color: var(--lightGrayishCyanSecondary);
+  height: 1.7rem;
+  font-size: 0.7rem;
+  width: 100%;
+  color: var(--veryDarkCyan);
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:hover{
+  cursor: pointer;
+}
+.dollar, .people{
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+  background-position-x: 7px;
+}
+.dollar {
+  background-image: url('./images/icon-dollar.svg');
+}
+.people {
+    background-image: url('./images/icon-person.svg');
+}
+#customPart .btn{
+  background-color: var(--veryDarkCyan);
+  color: var(--white);
+  font-size: 0.7rem;
+}
+#customPart .btn:hover, #resetBtn:hover{
+  background-color: hsl(172, 71%, 74%);
+  color: var(--veryDarkCyan);
+}
+#customPart .btn:focus{
+  background-color: var(--strongCyan);
+  color: var(--veryDarkCyan);
+}
+#custom:focus{
+  border-color: lightGreen;
+}
+#billwarning, #peoplewarning{
+  font-size: 0.5rem;
+  color: red;
+  display: none;
+}
+#calPart{
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+    height: 30%;
+    width: 80%;
+}
+.result-header{
+    color: var(--white);
+    /* font-size: 0.6rem; */
+}
+.result-person{
+    color: var(--lightGrayishCyanPrimary);
+    /* font-size: 0.3rem; */
+}
+#resetBtn{
+    background-color: hsl(172, 63%, 25%);
+    color: var(--veryDarkCyan);
+    height: 20%;
+    font-size: 0.7rem;
+}
+.resultRow{
+    width: 6rem;
+}
+#tipamount, #total{
+  color: var(--strongCyan);
+}
+@media screen and (min-width:1440px) {
+    #imgRow{
+      width: 5rem;
+    }
+    #cardWrap{
+      width: 60rem;
+      height: 68%;
+      font-size: 1.3rem;
+    }
+    #customPart{
+      width: 45%;
+      height: 90%;
+    }
+    input{
+        height: 3rem;
+        font-size: 2rem;
+        width: 27rem;
+    }
+    .dollar, .people{
+      background-size: 25px;
+      background-position-y: 13px;
+      /* background-position-x: 7px; */
+    }
+    .custom{
+      text-align: center;
+    }
+    #customPart .btn{
+      font-size: 1.5rem;
+    }
+    #billwarning, #peoplewarning{
+      font-size: 1.2rem;
+    }
+    #calPart{
+      width: 45%;
+      height: 90%;
+    }
+    .result-header{
+      font-size: 1rem;
+    }
+    .result-person{
+      font-size: 0.8rem;
+    }
+    #calPart .btn{
+      height: 10%;
+      font-size: 1.5rem;
+    }
+    .resultRow{
+      width: 20rem;
+    }
+    #tipamount, #total{
+      font-size: 3rem;
+    }
+}
